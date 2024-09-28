@@ -3,22 +3,22 @@ import logging
 import os
 from datetime import datetime
 
-# Logging configuration for all packets and threats
+#Logging configuration for all packets and threats
 log_all_packets = "all_packets_log.txt"
 log_potential_threats = "potential_threats_log.txt"
 log_dangerous_threats = "dangerous_threats_log.txt"
 
-# Set up logging for all packets
+#logging for all packets
 logging.basicConfig(filename=log_all_packets, level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Set up logging for potential threats
+#logging for potential threats
 potential_threat_logger = logging.getLogger('potential_threats')
 potential_threat_logger.setLevel(logging.INFO)
 potential_threat_handler = logging.FileHandler(log_potential_threats)
 potential_threat_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
 potential_threat_logger.addHandler(potential_threat_handler)
 
-# Set up logging for dangerous threats
+#logging for dangerous threats
 dangerous_threat_logger = logging.getLogger('dangerous_threats')
 dangerous_threat_logger.setLevel(logging.INFO)
 dangerous_threat_handler = logging.FileHandler(log_dangerous_threats)
@@ -100,11 +100,11 @@ def is_suspicious(packet):
 
     return False
 
-# Main function for packet sniffing
+# Main zobi
 def start_sniffing():
     print("Starting packet sniffing... Press Ctrl+C to stop.")
     sniff(prn=packet_callback)
 
 if __name__ == "__main__":
-    # Start sniffing packets
+    # Start sniffier
     start_sniffing()
