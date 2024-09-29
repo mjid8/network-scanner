@@ -1,4 +1,4 @@
-"""
+credit = """
 -------------------------------------------------
 Intrusion Detection System (IDS)
 Created by: [benaboud abdelmajid]
@@ -6,6 +6,7 @@ Email: [majidbenaboud@gmail.com]
 Description: A simple network monitoring tool
 -------------------------------------------------
 """
+print(credit)
 
 from scapy.all import sniff, IP, TCP
 import logging
