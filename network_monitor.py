@@ -1,9 +1,9 @@
 credit = """
 -------------------------------------------------
 Intrusion Detection System (IDS)
-Created by: [benaboud abdelmajid & mehdi hayzon]
+Created by: [benaboud abdelmajid & [mehdi hayzon]
 Email: [majidbenaboud@gmail.com]
-       [@gmail.com]
+       [hazmehdi315@gmail.com]
 Description: A simple network monitoring tool
 -------------------------------------------------
 """
